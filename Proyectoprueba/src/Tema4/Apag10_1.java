@@ -10,6 +10,7 @@ public class Apag10_1 {
 		int numero = escaner.nextInt();
 		int [] enteros = {1,1,1,1,2,2,2,2,3,3,3,3,4,4,5,6,7,7,7,8,9};
 		System.out.println("El numero "+numero+" aparece "+enteros(enteros,numero)+" veces ");
+		escaner.close();
 	}
 	
 	public static int enteros(int[] enteros,int n){
