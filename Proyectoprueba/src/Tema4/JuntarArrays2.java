@@ -11,6 +11,18 @@ public class JuntarArrays2 {
 				}else {
 					resultado[fila][columna]=b[fila][columna];
 				}
+				//
+				if (a[fila].length>=b[fila].length) {
+					
+				}else if (a[fila].length<b[fila].length){
+				
+				}
+				if (a[columna].length>=b[columna].length) {
+					
+				}else if (a[columna].length<b[columna].length){
+				
+				}
+				//
 			}
 		}		
 		return resultado;
