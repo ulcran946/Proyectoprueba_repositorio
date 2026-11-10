@@ -7,10 +7,13 @@ public class Varags {
 		for (int i=0;i<nums.length;i++) {
 			System.out.print(nums[i]+" ");
 		}
+		
 	}
-	static void main (int a=2,int b=3) {
+	
+	static void main (int a,int b) {
 		mostrarEnteros();
 	mostrarEnteros(1,2,3);
 	mostrarEnteros(b,a++,a*b,++b);
 	}
+
 }
