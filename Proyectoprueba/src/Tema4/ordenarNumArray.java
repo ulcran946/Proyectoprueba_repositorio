@@ -21,9 +21,10 @@ public class ordenarNumArray {
 		return devolucion;
 	}
 	
+	
 	public static void subOrden(int fila, int columna, int[][]a) {
 		int[] siguiente=siguiente(fila,columna,a);
-		if ((siguiente[0]>0)&&(a[fila][columna]>a[siguiente[0]][siguiente[1]])) {
+		if ((siguiente[0]>=0)&&(a[fila][columna]>a[siguiente[0]][siguiente[1]])) {
 			int aux=a[fila][columna];
 			a[fila][columna]=a[siguiente[0]][siguiente[1]];
 			a[siguiente[0]][siguiente[1]]=aux;
@@ -43,11 +44,12 @@ public class ordenarNumArray {
 	
 	public static void main (String[] args) {
 		int [][] matriz= {{1,5,10,25},{30,100,75,30},{15,75,90,45}};
-		for (int i=0;i<(matriz.length*matriz[0].length);i++);
+		for (int i=0;i<(matriz.length*matriz[0].length);i++) {
 		RecursivoMostrarArray3.imprimirArray(matriz);
 		ordenarMatriz(matriz);
 		System.out.println("");
 		RecursivoMostrarArray3.imprimirArray(matriz);
+		}
 	}
 	
 	
