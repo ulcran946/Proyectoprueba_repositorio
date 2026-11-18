@@ -1,5 +1,7 @@
 package Tema4;
 
-public class pag61_3 {
+import java.util.Scanner;
 
+public class pag61_3 {
+	
 }
